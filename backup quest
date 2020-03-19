@@ -126,8 +126,6 @@ app.post( '/api/employee', ( request, results) => {
     ] 
     [VENTAJA usar ? es la escalabilidad. Si se agrega/modifica/elimina un campo, no será necesario reescribir la consulta (siempre q el objeto recuperado coincida con los campos de la tabla)]
     */
-    
-   
 
     connection.query('INSERT INTO employee SET ?', formData, (error, results) => {
         // send a response to the client (step 4)
